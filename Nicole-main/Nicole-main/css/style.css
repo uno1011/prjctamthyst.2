@@ -2,93 +2,62 @@
 *{
     font-family: 'Poppins',cursive;
 }
-body{
-    color: azure;
-    width: 100%;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.ejiltalk.org/wp-content/uploads/2021/03/pexels-photo-110854.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
+    color:white
 }
-.greetings{
-    font-size: 6rem;
-    font-weight: 900;
+
+header {
+    background-color: #7b25cc;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    
 }
-.greetings > span{
-    animation: glow 2.5s ease-in-out infinite;
-}
-@keyframes glow{
-    0%, 100%{
-        color: #fff;
-        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
-    }
-    10%, 90%{
-        color: #111;
-        text-shadow: none;
-    }
-}
-.greetings > span:nth-child(2){
-    animation-delay: .2s ;
-}
-.greetings > span:nth-child(3){
-    animation-delay: .4s ;
-}
-.greetings > span:nth-child(4){
-    animation-delay: .6s;
-    margin: 0px;
-}
-.greetings > span:nth-child(5){
-    animation-delay: .8s;
-    margin: 25px;
-}
-.greetings > span:nth-child(6){
-    animation-delay: 1s;
-}
-.greetings > span:nth-child(7){
-    animation-delay: 1.2s;
-}
-.greetings > span:nth-child(8){
-    animation-delay: 1.4s;
-    margin: 0px;
-}
-.greetings > span:nth-child(9){
-    animation-delay: 1.6s;
-    margin-left: 40px;
-}
-.greetings > span:nth-child(10){
-    animation-delay: 1.8s;
-}
-.greetings > span:nth-child(11){
-    animation-delay: 2s;
-}
-.greetings > span:nth-child(12){
-    animation-delay: 2.4s;
-}
-.greetings > span:nth-child(13){
-    animation-delay: 2.6s;
-}
-.greetings > span:nth-child(14){
-    animation-delay: 2.8s;
-}
-.greetings > span:nth-child(15){
-    animation-delay: 3s;
-}
-.greetings > span:nth-child(16){
-    animation-delay: 3.2s;
-}
-.description{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
     text-align: center;
 }
 
-.button a{
-    text-decoration: none;
+button {
+    background-color: #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
-    color: #111;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border-radius: 57px;
+}
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 20px #ffffff; /* Change color and spread as needed */
+  }
+}
+
+p {
+  animation: glow 1.5s infinite; /* Adjust animation duration as needed */
+  display: inline; /* Ensures that the text shadow does not overflow the paragraph box */
+}
+
 
 @media screen and (max-width:574px){
     .greetings{
